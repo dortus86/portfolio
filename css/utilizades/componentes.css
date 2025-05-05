@@ -1,0 +1,50 @@
+.container {
+    max-width: 1600px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+}
+
+.botao-branco {
+    display: block;
+    background-color: var(--cor-branco-00);
+    color: var(--cor-azul-900);
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.botao-branco:hover {
+    background: transparent;
+    color: var(--cor-branco-00);
+    outline: 2px solid var(--cor-branco-00);
+}
+
+.botao-azul {
+    display: block;
+    background-color: transparent;
+    color: var(--cor-branco-00);
+    padding: 12px 20px;
+    border: 2px solid var(--cor-branco-00);
+    outline: none;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.botao-azul:hover {
+    background: var(--cor-branco-00);
+    color: var(--cor-azul-900);
+    outline: 2px solid var(--cor-branco-00);
+}
+
+@media (max-width: 1400px) {
+    nav ul a {
+        font-size: 0.875rem;
+    }
+    .botao-branco, .botao-azul {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+}

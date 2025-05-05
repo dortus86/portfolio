@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danyel Sales - Portifolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="nav-bg">
+        <div id="nav" class="nav container">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="logo tipo">
+            </div>
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="burger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <a href="#"><li>Sobre mim</li></a>
+                <a href="#"><li>Habilidades</li></a>
+                <a href="#"><li>Projetos</li></a>
+                <a href="#"><li>Certificados</li></a>
+                <a href="#" class="botao-branco"><li>Contato</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <!-- Camada com efeito Vanta.js -->
+        <div id="fundo-vanta"></div>
+        <!-- Conteúdo principal sobre o efeito -->
+        <div class="conteudo">
+            <h2>Danyel Sales</h2>
+            <h1>front end developer & ui designer</h1>
+            <p>Crio sites e aplicações responsivas que aliam estética, usabilidade e eficiência para impulsionar negócios e experiências digitais.</p>
+            <div class="nav-botoes">
+                <a href="#" class="botao-branco">Ver Projetos</a>
+                <a href="#" class="botao-azul">Entre em contato</a>
+            </div>
+            <h3>Me encontre em:</h3>
+            <div class="redes-sociais container">
+                <div>
+                    <a href="#"><img src="./img/icon/linkedin.svg" alt="linkedin"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./img/icon/github.svg" alt="linkedin"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./img/icon/insta.svg" alt="linkedin"></a>
+                </div>
+            </div>
+            <div class="mouse">
+                <div class="roda">    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção abaixo do efeito -->
+    <section class="sobre">
+        <h1>TESTE</h1>
+        <p>Esta seção está logo abaixo do efeito Vanta.js</p>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
