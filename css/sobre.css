@@ -1,5 +1,79 @@
+.sobre-bg {
+    background-color: var(--cor-azul-700);
+}
 .sobre {
-    padding: 60px 20px;
-    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: var(--cor-azul-700);
+    color: var(--cor-branco-00);
 }
 
+
+.sobre-conteudo h3 {
+    font-size: 1rem;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.sobre-conteudo h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    max-width:560px;
+}
+
+.sobre-conteudo p {
+    font-size: 1rem;
+    color: var(--cor-azul-001);
+    margin-bottom: 32px;
+    line-height: 1.4;
+    max-width:560px ;
+}
+
+.sobre-conteudo ul {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+.sobre-conteudo ul li {
+    margin-bottom: 16px;
+    max-width: 400px;
+    color: var(--cor-azul-001);
+}
+
+.sobre-conteudo a {
+    justify-self: start;
+    margin-top: 32px;
+}
+
+.sobre-img {
+    max-height: 640px;
+    justify-self: end;
+}
+
+.sobre-img img {
+    height: 640px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 900px) {
+    .sobre-img {
+        display: none;
+    }
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+    .sobre-conteudo h1, .sobre-conteudo p  {
+        max-width:100%;
+    }
+    .sobre-conteudo a {
+        justify-self: center;
+    }
+    
+}
