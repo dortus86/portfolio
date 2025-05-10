@@ -25,6 +25,7 @@
     line-height: 1.2;
     margin-bottom: 20px;
     max-width:560px;
+    color: #E1FF50;
 }
 
 .sobre-conteudo p {
@@ -68,9 +69,23 @@
     }
     .sobre {
         grid-template-columns: 1fr;
+        padding-top: 40px
+    }
+    .sobre-conteudo h3 {
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    .sobre-conteudo h1 {
+        font-size: 2.5rem;
+    }
+    .sobre-conteudo p {
+        font-size: 0.875rem;
     }
     .sobre-conteudo h1, .sobre-conteudo p  {
-        max-width:100%;
+        max-width: 100%;
+    }
+    .sobre-conteudo ul li {
+        font-size: 0.875rem;
     }
     .sobre-conteudo a {
         justify-self: center;
