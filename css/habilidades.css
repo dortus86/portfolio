@@ -1,0 +1,26 @@
+.habilidades-bg {
+    background-color: var(--cor-azul-900);
+}
+
+.habilidades {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    border: 2px solid red;
+}
+
+.habilidades-ferramentas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.habilidades-conteudo {
+    justify-self: end;
+}
+
+.habilidades-conteudo h1 {
+    color: var(--cor-branco-00);
+    text-transform: uppercase;
+    
+}
