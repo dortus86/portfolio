@@ -1,3 +1,4 @@
+//Animação Hero
 window.addEventListener('DOMContentLoaded', () => {
     VANTA.HALO({
         el: "#fundo-vanta",
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 })
 
+//Manu Mobile
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
@@ -27,3 +29,29 @@ function toggleMenu(event) {
 }
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
+
+//Navegaçao em Tab - Habilidades
+const tabMenu = document.querySelectorAll('.js-tabmenu li')
+const tabContent = document.querySelectorAll(".js-tabcontent section");
+
+if(tabMenu.length && tabContent.length) {
+    tabContent[0].classList.add('ativo')
+    tabMenu[0].classList.add('selecao-ativo')
+
+    function activeTab(index) {
+        tabContent.forEach((section) => {
+            section.classList.remove('ativo')
+        })
+        tabMenu.forEach((icone) => {
+            icone.classList.remove('selecao-ativo')
+        })
+        tabMenu[index].classList.add('selecao-ativo')
+        tabContent[index].classList.add('ativo')
+    }
+
+    tabMenu.forEach((itemMenu, index) => {
+        itemMenu.addEventListener('click', function() {
+            activeTab(index);
+        })
+    })
+}

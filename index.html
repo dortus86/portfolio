@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        document.documentElement.className += ' js'
+    </script>
 </head>
 
 <body>
@@ -73,7 +76,7 @@
                     <li>Crio interfaces intuitivas, acessíveis e alinhadas às necessidades reais dos usuários.</li>
                     <li>Entusiasta de inovações, estou sempre explorando novas ferramentas e boas práticas de desenvolvimento.</li>
                 </ul>
-                <a href="#" class="botao-azul">Contecte-se comigo</a>
+                <a href="#" class="botao-azul">Conecte-se comigo</a>
             </div>
             <div class="sobre-img">
                 <img src="./img/fotos/eu.jpg" alt="">
@@ -83,17 +86,50 @@
     
     <section class="habilidades-bg">
         <div class="habilidades container">
-            <div class="habilidades-ferramentas">
-                <img src="./img/icon/html.svg" alt="html">
-                <img src="./img/icon/css.svg" alt="css">
-                <img src="./img/icon/figma.svg" alt="figma">
-                <img src="./img/icon/js.svg" alt="javascript">
-                <img src="./img/icon/react.svg" alt="react">
-                <img src="./img/icon/tailwind.svg" alt="tailwind">
-            </div>
-            <div class="habilidades-conteudo">
-                <h1>Habilidades</h1>
+            <ul class="habilidades-ferramentas js-tabmenu">
+                <li>
+                    <img src="./img/icon/html2.svg" alt="html">
+                </li>
+                <li>
+                    <img src="./img/icon/css2.svg" alt="css">
+                </li>
+                <li>
+                    <img src="./img/icon/figma2.svg" alt="figma">
+                </li>
+                <li>
+                    <img src="./img/icon/js2.svg" alt="javascript">
+                </li>
+                <li>
+                    <img src="./img/icon/react2.svg" alt="react">
+                </li>
+                <li>
+                    <img src="./img/icon/tailwind2.svg" alt="tailwind">
+                </li>
+                <li class="habilidades-ferramentas-paragrafo">
+                    <p>Clique com o mouse nas imagens acima para ler</p>
+                </li>
+            </ul>
+            <div class="habilidades-conteudo js-tabcontent">
                 
+                    <h1>Habilidades</h1>
+                    <section>
+                        <p><span>HTML</span> (HyperText Markup Language) é a linguagem padrão usada para criar páginas da web. Ele estrutura o conteúdo por meio de elementos como títulos, parágrafos, links, imagens e tabelas.</p>
+                    </section>
+                    <section>
+                        <p><span>CSS</span> (Cascading Style Sheets) é a linguagem usada para definir o estilo visual de páginas web. Com ela, é possível controlar cores, fontes, espaçamentos, alinhamentos e animações, melhorando a experiência e o design da interface.</p>
+                    </section>
+                    <section>
+                        <p><span>FIGMA</span> é uma ferramenta de design colaborativo baseada na web. Usada para criar interfaces, protótipos e sistemas de design, ela permite que equipes trabalhem juntas em tempo real, facilitando o processo de criação visual.</p>
+                    </section>
+                    <section>
+                        <p><span>JavaScript</span> é uma linguagem de programação que permite adicionar interatividade às páginas web. Com ela, podemos criar animações, validar formulários, manipular elementos em tempo real e integrar APIs externas ao site.</p>
+                    </section>
+                    <section>
+                        <p><span>REACT</span> é uma biblioteca JavaScript desenvolvida pelo Facebook para construir interfaces de usuário. Utilizando componentes reutilizáveis e estados, ela facilita a criação de aplicações web dinâmicas e responsivas.</p>
+                    </section>
+                    <section>
+                        <p><span>Tailwind</span> é um framework utilitário de CSS que permite estilizar elementos diretamente no HTML com classes pré-definidas. Ele acelera o desenvolvimento ao eliminar a necessidade de escrever CSS personalizado do zero.</p>
+                    </section>
             </div>
         </div>
 

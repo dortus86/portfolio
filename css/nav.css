@@ -28,7 +28,7 @@ nav ul {
 }
 
 .nav ul a:not(:last-child):hover {
-    color: #D363FF;
+    color: var(--cor-verde-primary);
 }
 
 #btn-mobile {
