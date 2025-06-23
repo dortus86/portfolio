@@ -59,37 +59,40 @@ function init_navegacaoTab() {
     }
 } init_navegacaoTab() 
 
+function init_modal() {
+    if (window.innerWidth > 900) return;
 
-const habilidadesModal = document.querySelectorAll(".js-tabmenu li");
-const habilidadesModalContent = document.querySelectorAll(".js-modal-habilidade");
-const botaoFecharModal = document.querySelectorAll(".js-modal-habilidades .js-modal-habilidade div button"
-);
+    const habilidadesModal = document.querySelectorAll(".js-tabmenu li");
+    const habilidadesModalContent = document.querySelectorAll(".js-modal-habilidade");
+    const botaoFecharModal = document.querySelectorAll(".js-modal-habilidades .js-modal-habilidade div button"
+    );
 
-function ativarModal(index) {
-    habilidadesModalContent.forEach((modalContent) => {
-        modalContent.classList.remove('ativo')
-    });
-    habilidadesModal.forEach((modalIcone) => {
-        modalIcone.classList.remove('selecao-ativo')
-    });
-    habilidadesModal[index].classList.add("selecao-ativo");
-    habilidadesModalContent[index].classList.add("ativo");
-} 
+    function ativarModal(index) {
+        habilidadesModalContent.forEach((modalContent) => {
+            modalContent.classList.remove('ativo')
+        });
+        habilidadesModal.forEach((modalIcone) => {
+            modalIcone.classList.remove('selecao-ativo')
+        });
+        habilidadesModal[index].classList.add("selecao-ativo");
+        habilidadesModalContent[index].classList.add("ativo");
+    } 
 
-function fecharModal() {
-    habilidadesModalContent.forEach((modalContent) => {
-        modalContent.classList.remove("ativo");
-    });
-}
+    function fecharModal() {
+        habilidadesModalContent.forEach((modalContent) => {
+            modalContent.classList.remove("ativo");
+        });
+    }
 
-habilidadesModal.forEach((itemModal, index) => {
-    itemModal.addEventListener('click', function() {
-        ativarModal(index);
+    habilidadesModal.forEach((itemModal, index) => {
+        itemModal.addEventListener('click', function() {
+            ativarModal(index);
+        })
     })
-})
 
-botaoFecharModal.forEach((itemModal, index) => {
-    itemModal.addEventListener("click", function () {
-        fecharModal(index);
-    });
-})
+    botaoFecharModal.forEach((itemModal, index) => {
+        itemModal.addEventListener("click", function () {
+            fecharModal(index);
+        });
+    })
+} init_modal()
